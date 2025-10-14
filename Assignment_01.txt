@@ -15,18 +15,18 @@ Tech: MERN stack (MongoDB, Express, React, Node.js).
 Question 2:  Create a simple diagram showing how the client-server model works in web architecture.
 Answer:  
 +------------------+        +------------------+        +------------------+
-|      Client               |         |     Web                  |         |                               |
-| (Web Browser)     |---->|    Server                |  <---|   Web Server        |
+|      Client       |       |     DNS          |        |                  |
+| (Web Browser)     |---->  |    Server        |  <---  |   Web Server     |
 +------------------+        +------------------+        +------------------+
-         |                                             |                                        |
-         | 1. User enters URL             |   2. DNS Lookup            | 4. Server Processes Request & Sends
-         |                                             |     (Domain to IP)           |  Response (HTML, CSS, JS)
-         |                                             |                                        |
-         | 3. HTTP/HTTPS Request    |                                        |
-         | (to Web Server IP)             |                                        |
-         |                                            |                                         |
+         |                          |                            |
+         | 1. User enters URL       |   2. DNS Lookup            | 4. Server Processes Request & Sends
+         |                          |   (Domain to IP)           |  Response (HTML, CSS, JS)
+         |                          |                            |
+         | 3. HTTP/HTTPS Request    |                            |
+         | (to Web Server IP)       |                            |
+         |                                                       |
 +---------------------------------------------------------------------------+
-|                                    Internet                                                                       |
+|                                    Internet                               |
 +---------------------------------------------------------------------------+
 
 
