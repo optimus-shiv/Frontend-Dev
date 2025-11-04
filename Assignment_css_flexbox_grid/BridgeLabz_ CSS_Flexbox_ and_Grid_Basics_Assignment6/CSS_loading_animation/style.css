@@ -1,0 +1,49 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f7fa;
+}
+
+/* Loader Container */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+/* Circles */
+.circle {
+  width: 20px;
+  height: 20px;
+  background: #007bff;
+  border-radius: 50%;
+  animation: bounce 0.6s ease-in-out infinite;
+}
+
+/* Each circle starts with a slight delay */
+.circle:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.circle:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+/* Keyframes for up and down motion */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
